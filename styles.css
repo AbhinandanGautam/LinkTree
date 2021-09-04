@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100%;
+}
+
+.container {
+  height: 100vh;
+  width: 55%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 3%;
+  padding-right: 5%;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background: #c59d5f;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bg-img {
+  background-image: linear-gradient(
+      rgba(56, 58, 55, 0.651),
+      rgba(47, 51, 45, 0.644)
+    ),
+    url(./featured_links.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 4rem;
+  font-style: italic;
+  color: #ffbd59;
+  text-align: center;
+  margin: 25px;
+}
+
+.photo {
+  object-fit: cover;
+  height: 200px;
+  border: 0.25rem solid #c59d5f;
+  border-radius: 6.5rem;
+  
+}
+.links {
+  margin: 15px 15px;
+  padding: 5px 5px;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Baloo Bhaina 2', cursive;
+  margin: 15px;
+  color: white;
+}
+
+.links li {
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p {
+  height: auto;
+  width: 500px;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-weight: 550;
+  color: white;
+}
+
+.btn-social-icons {
+  background: linear-gradient(to right, transparent 50%, #ffbd59 50%);
+  background-size: 200% auto;
+  background-position: left;
+  padding: 15px 45px;
+  text-align: center;
+  border: 2px solid #ffbd59;
+  outline: none;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 3px 8px 22px rgb(21, 21, 21, 0.15);
+  transition: background-position 0.5s;
+}
+
+.btn-social-icons:hover {
+  background-position: right;
+  color: #1b1b1b;
+}
+
+@media screen and (max-width: 860px) and (min-width: 585px){
+  .bg-img{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:585px) {
+  .bg-img{
+    flex-direction: column;
+    overflow: hidden;
+  }
+  article{
+    margin-top: 150px;
+  }
+  p{
+    width: 300px;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 2.5rem;
+  }
+}
